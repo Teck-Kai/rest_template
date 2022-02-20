@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '2.2.6.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
 
 sourceCompatibility = 1.8
@@ -11,4 +13,16 @@ repositories {
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.6.RELEASE'
     compile group: 'org.springframework', name: 'spring-context-support', version: '4.3.20.RELEASE'
+    compile group: 'net.java.dev.jna', name: 'jna-platform', version: '5.5.0'
+    compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.13.0'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+//    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.0'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.25.Final'
+    compile group: 'org.hibernate', name: 'hibernate', version: '3.2.5.ga', ext: 'pom'
+    compile group: 'commons-codec', name:'commons-codec', version:'1.11'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.2.6.RELEASE'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.19'
+    compile 'com.github.dpaukov:combinatoricslib3:3.3.0'
 }
+
+
